@@ -1,3 +1,56 @@
-h3{
-    width: auto;
+/* this is the container for the header */
+.headerContainer{
+    width: 100%;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+}
+/* this is the header with the rules */
+.rules{
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 150px;
+    border-width:10px;
+    border-style: solid;
+    border-color: green;
+}
+/* this is the game container all the game happens here */
+.gameContainer{
+    width: 100%;
+}
+/* This is the box that the crystals rests inside */
+.crystals{
+    display: flex;
+    width: 80%;
+    margin-right:12%;
+    margin-left:15%;
+    flex-wrap: wrap;
+    border: 10px, solid, red;
+}
+/* this is the css for each individual crystal */
+.crystal{
+    border:2px solid black;
+    height: 200px;
+    width: 200px;
+    max-width:200px;
+    margin: 10px 10px 10px 18px;
+}
+/* this is where the score are kept */
+.scores{
+    border-width:10px;
+    border-style: solid;
+    border-color: orange;
+    max-width: 1080px;
+    margin-left:15%;
+    margin-right:15%;
+    height:150px;
+}
+/* this is the footer container */
+.footer{
+    border-width:10px;
+    border-style: solid;
+    border-color: pink;
+    width: 99%;
+    box-flex: center;
+    height:100px;
 }
