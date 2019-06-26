@@ -1,27 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
-    <meta charset="UTF-8">
-    <title>CRYSTAL COLLECTOR</title>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-    <link rel="stylesheet" href="assets/css/style.css">
-
-  
+<!-- header declarations -->
+<head>
+	<meta charset="UTF-8">
+	<title>Crystal Collector</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
-<body>
-        <div class="headerContainer">
-    <div class="rules">these are the rules of the game you are given 4 crystals each crystal will randomly be given a value and these values will change  </div>
-</div>   
-    <div class="gameContainer">
-        <div class="crystals">
-        </div>
-        </div>
-    <div class="scores">
-          </div>
-     <div class="footer">
-         </div>
-    <script src="assets/javascript/game.js"></script>
+
+<!-- first body tag -->
+<body class="body">
+<!-- header -->
+
+	<div class="header" style="padding-top: 15px; padding-bottom: 15px";>
+<!-- crystal collector tag -->
+		<img id="collectorLogo" src="assets/images/Crystal Collector 327883167395865.png"  alt="Collector">
+	</div>
+<div> 
+	<h2 id="instructions" style="border-style:solid; border-width: 3px; border-color: grey;">The computer will generate a random number, youre job is to click on each diamond witch will have its own hidden number the goal is to click(collect) the exact number of diamonds without going over if you Win your Win will be added to your total, if you lose your lose will be added to the losing total, you can play as many rounds as you want you.</h2>
+</div>
+<div id="box" >
+<h1></h2>
+	</div >
+<!-- Scores Numbers -->
+<div id="twinTables">
+	<table id="gameScores" style="text-align: center; margin-left:5%; margin-right:5%; width: 90%";>
+		<tr>
+		  <th id=randomNumber style="width:25%;">Random Number:</th>
+		  <th id=win style="width:25%;">Wins:</th>
+		  <th id=losses style="width:25%;">Losses:</th>
+		  <th style="width:25%;">Your Score is:</th>
+	   </tr>
+	   <tr>
+		  <td style="width:25%;" id="random1"></td>
+		  <td style="width:25%;" id="gameWins"></td>
+		  <td style="width:25%;" id="gameLosses"></td>
+		  <td style="width:25%;" id="totalScoreIs"></td>
+	   </tr>
+	 </table>
+
+	<!-- gems table-->
+	
+	<table id=gameGems>
+		<tr>
+		  <th ><img src="assets/images/blue.jpg" class="bloodDiamond" id="bloodDiamond1" alt="Blue Blood Diamond"><th>
+		  <th ><img src="assets/images/green.jpg"  class="bloodDiamond" id="bloodDiamond2" alt="Green Blood Diamond"><th>
+		  <th ><img src="assets/images/red.jpg" class="bloodDiamond" id= "bloodDiamond3" alt="Red Blood Diamond"></th>
+		  <th ><img src="assets/images/yellow.jpg"  class="bloodDiamond" id="bloodDiamond4" alt="Yellow Blood Diamond"></th>
+		</tr>
+	</div>
+	</table>
+
+
+	<!-- Footer Logo for copyright -->
+	<div class="footer"><img src="https://images.cooltext.com/5301609.png" alt="coded by KC BECK 2019(C)" />
+	
+<!-- script links -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
 </html>
